@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+body {
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-color;
+}
+
+::selection {
+    background: $red-color;
+    color: $white-color;
+}
+
+::-moz-selection {
+    background: $red-color;
+    color: $white-color;
+}
+
+/**
+*
+* Scrollbar
+*
+*/
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $red-color;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $white-color;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+button {
+    font-family: 'Sora' sans-serif;
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
